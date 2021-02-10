@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>calculation实现布局</title>
+  <style>
+    .left, .right {
+      width: 200px;
+      min-height: 200px;
+      background: lightblue;
+    }
+    .center {
+      width: calc(100% - 400px);
+      min-height: 400px;
+      background: lightsalmon;
+    }
+    .left, .right, .center {
+      float: left;
+    }
+  </style>
+</head>
+<body>
+<div class="left"></div>
+<div class="center"></div>
+<div class="right"></div>
+</body>
+</html>

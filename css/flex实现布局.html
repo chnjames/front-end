@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>flex实现布局</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .left, .right {
+      flex: 0 0 200px; /*0：放大比例 0：缩小比例 200px：大小*/
+      height: 200px;
+      background: lightblue;
+    }
+    .center {
+      flex: 1;
+      min-height: 400px;
+      background: lightsalmon;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="left"></div>
+  <div class="center"></div>
+  <div class="right"></div>
+</div>
+</body>
+</html>
